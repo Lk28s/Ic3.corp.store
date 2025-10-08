@@ -1,0 +1,11 @@
+{
+  "name": "revenda-contas",
+  "version": "1.0.0",
+  "description": "Site de revenda de contas com Vercel Postgres",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@vercel/postgres": "^0.5.0"
+  }
+}
