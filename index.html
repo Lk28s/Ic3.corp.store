@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenda de Contas - Digital Accounts</title>
+    <!-- Bootstrap CSS para responsividade -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS para animações -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Revenda de Contas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contas">Contas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#admin">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center text-center text-white">
+        <div class="container" data-aos="fade-up">
+            <h1 class="display-4">Revenda de Contas Digitais</h1>
+            <p class="lead">Compre contas premium de serviços como Netflix, Spotify e mais. Rápido e seguro!</p>
+            <a href="#contas" class="btn btn-primary btn-lg">Ver Contas</a>
+        </div>
+    </section>
+
+    <!-- Seção de Contas -->
+    <section id="contas" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Nossas Contas Disponíveis</h2>
+            <div class="row" id="lista-contas">
+                <!-- Cards serão inseridos via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Admin (simples) -->
+    <section id="admin" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">Adicionar Nova Conta (Admin)</h2>
+            <form id="form-adicionar" class="row justify-content-center">
+                <div class="col-md-6">
+                    <input type="text" class="form-control mb-3" id="tipo" placeholder="Tipo de Conta (ex: Netflix)" required>
+                    <input type="text" class="form-control mb-3" id="preco" placeholder="Preço (ex: R$ 29,90)" required>
+                    <textarea class="form-control mb-3" id="descricao" placeholder="Descrição" required></textarea>
+                    <button type="submit" class="btn btn-success w-100">Adicionar Conta</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Revenda de Contas. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000 });
+    </script>
+    <!-- JS customizado -->
+    <script src="script.js"></script>
+</body>
+</html>
